@@ -1,0 +1,16 @@
+
+[Unit]
+Description=Gaby Time Service
+After=network.target
+
+[Service]
+ExecStart=python3 /home/tzahi/project1/time.py
+Restart=always
+WorkingDirectory=/home/tzahi
+User=tzahi
+Group=tzahi
+
+[Install]
+WantedBy=multi-user.target
+
+
